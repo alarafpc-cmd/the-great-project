@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8J914NYM1R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8J914NYM1R');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Roya, I have something to ask you</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,300;1,400&family=Geist:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{--night:#2a1245;--dusk:#8a2f7a;--rose:#ff6b81;--sun:#ffb36b;--ink:#fff3ef;--soft:rgba(255,243,239,.68);--line:rgba(255,243,239,.24);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--gold:#d8b46a;--night:#2a1245;--dusk:#8a2f7a;--rose:#ff6b81;--sun:#ffb36b;--ink:#fff3ef;--soft:rgba(255,243,239,.68);--line:rgba(255,243,239,.24);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--night:#12061f;--dusk:#5a1d63;--rose:#ff7a8e}}
 :root[data-theme="dark"]{--night:#12061f;--dusk:#5a1d63;--rose:#ff7a8e}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -47,7 +38,21 @@ body{--t:0;background:color-mix(in srgb,var(--dusk) calc(var(--t)*100%),var(--ni
 #yes{background:linear-gradient(135deg,var(--rose),#ff9a62);color:#2a0f2e;box-shadow:0 10px 40px -8px var(--rose);transition:transform .4s cubic-bezier(.3,1.6,.5,1);animation:pl 2.4s infinite}
 @keyframes pl{50%{box-shadow:0 10px 64px 4px var(--rose)}}
 #no{background:transparent;border:1px solid var(--line);transition:left .35s cubic-bezier(.3,1.4,.5,1),top .35s cubic-bezier(.3,1.4,.5,1)}
-#no.sw{background:linear-gradient(135deg,var(--rose),#ff9a62);color:#2a0f2e;border:0;box-shadow:0 10px 40px -8px var(--rose);animation:pl 2.4s infinite}.stamp{margin-top:.6rem;color:var(--rose);font:700 1.5rem Caveat,cursive}
+#no.sw{background:linear-gradient(135deg,var(--rose),#ff9a62);color:#2a0f2e;border:0;box-shadow:0 10px 40px -8px var(--rose);animation:pl 2.4s infinite}.stamp{margin-top:.6rem;color:var(--gold);font:700 1.5rem Caveat,cursive}
+.env{position:relative;width:min(78vw,300px);height:min(50vw,196px);margin:5.5rem auto 1.3rem;perspective:800px}.env>*{position:absolute}
+.bk{inset:0;background:#4a1330;border-radius:10px;box-shadow:0 20px 50px -14px #000}
+.lt{left:6%;right:6%;top:8%;height:84%;z-index:2;padding:.7rem .9rem;background:#fff3ef;color:#3a1230;border-radius:6px;font:700 1.3rem/1.15 Caveat,cursive;text-align:left;white-space:pre-line;transition:transform 1s .6s cubic-bezier(.3,1.2,.4,1)}
+.env.op .lt{transform:translateY(-64%)}
+.ft{inset:0;z-index:3;background:#7d2650;clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%);border-radius:10px}
+.fp{left:0;right:0;top:0;height:54%;z-index:4;background:#9a3563;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform .8s,z-index 0s .4s}
+.env.op .fp{transform:rotateX(180deg);z-index:1}
+.seal{left:50%;top:54%;width:46px;height:46px;margin:-23px 0 0 -23px;z-index:5;border:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f0d9a0,var(--gold) 60%,#8d6b2c);color:#4a1226;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.45);animation:hbt 1.4s ease-in-out infinite;transition:opacity .4s}
+.env.op{animation:none}.env.op .seal{opacity:0;pointer-events:none;animation:none}
+#go{margin-top:1.2rem;background:linear-gradient(135deg,var(--rose),#ff9a62);color:#2a0f2e}
+.rose{display:block;width:clamp(84px,24vw,120px);margin:0 auto .4rem;overflow:visible;filter:drop-shadow(0 0 22px var(--rose));animation:sway 5s ease-in-out infinite}@keyframes sway{50%{transform:rotate(4deg)}}
+.rose g{animation:bl 1.3s cubic-bezier(.3,1.4,.5,1) both paused;animation-delay:calc((4 - var(--l))*.3s)}#ask.in .rose g{animation-play-state:running}@keyframes bl{from{transform:scale(0) rotate(-40deg);opacity:0}}
+.alt{margin-top:1rem;opacity:0;animation:fi 1s 1.4s forwards}.alt button{background:none;border:0;color:var(--soft);font:700 1.3rem Caveat,cursive;text-decoration:underline;padding:.6rem 1rem;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.rose,.rose g,.env,.seal{animation:none}}
 button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 .sig{margin-top:2.4rem;color:var(--soft);font-style:italic}
 #done{position:fixed;inset:0;z-index:20;display:grid;place-items:center;text-align:center;padding:8vw;background:color-mix(in srgb,var(--night) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:0;visibility:hidden;transition:opacity .7s,visibility .7s}
@@ -82,7 +87,7 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="br" viewBox="0 0 27 78"><path d="M26.52 77.21h-5.75c-6.83 0-12.38-5.56-12.38-12.38V48.38C8.39 43.76 4.63 40 .01 40v-4c4.62 0 8.38-3.76 8.38-8.38V12.4C8.38 5.56 13.94 0 20.77 0h5.75v4h-5.75c-4.62 0-8.38 3.76-8.38 8.38V27.6c0 4.34-2.25 8.17-5.64 10.38 3.39 2.21 5.64 6.04 5.64 10.38v16.45c0 4.62 3.76 8.38 8.38 8.38h5.75v4.02Z"/></symbol></svg>
 <div class="sun"></div><div class="pb t"></div><div class="pb b"></div><canvas id="fx"></canvas>
 <div id="bar"></div><div id="bud" aria-hidden="true">🐥</div><button id="mus" aria-label="Music on or off" aria-pressed="false">♪</button>
-<div id="gate"><div><div class="env">💌</div><p class="disp" style="font-size:clamp(1.9rem,6vw,3.2rem);font-style:italic;line-height:1.1">Roya, this one’s just for you</p><p class="sub" style="min-height:0;margin:.8rem auto 0">turn your sound on, it’s sweeter with music ♪</p><button class="b" id="open">open it 💖</button></div></div>
+<div id="gate"><div><div class="env" id="env"><div class="bk"></div><div class="lt" id="lt"></div><div class="ft"></div><div class="fp"></div><button class="seal" id="open" aria-label="Open the letter">♥</button></div><p class="disp" style="font-size:clamp(1.9rem,6vw,3.2rem);font-style:italic;line-height:1.1">Roya, this one’s just for you</p><p class="sub" id="gh" style="min-height:0;margin:.8rem auto 0">tap the seal to open it · sound on for music ♪</p><button class="b" id="go" hidden>begin 💖</button></div></div>
 
 <section class="stage" id="s1"><div class="pin">
   <p class="cue">scroll slowly, you’ll have company 🐥</p>
@@ -102,15 +107,16 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 <section class="stage" id="s4"><div class="pin"><p class="prom disp" id="pr"></p></div></section>
 
 <section id="ask"><i class="st" style="left:8%;top:16%">🧸</i><i class="st" style="right:9%;top:22%;animation-delay:-1.5s">🌷</i><i class="st" style="left:12%;bottom:18%;animation-delay:-3s">🍓</i><i class="st" style="right:10%;bottom:16%;animation-delay:-2s">✨</i><div>
-  <div class="hb">💗</div><h2 class="big disp" id="q">Roya, will you be mine?</h2>
-  <p class="sub" id="sub">No pressure. Okay, a little pressure.</p>
+  <svg class="rose" id="rose" viewBox="-60 -60 120 120" aria-hidden="true"></svg><h2 class="big disp" id="q">Roya, will you be mine?</h2>
+  <p class="sub" id="sub" aria-live="polite">No pressure. Okay, a little pressure.</p>
   <div class="btns" id="btns"><button class="b" id="yes">Yes 💖</button><button class="b" id="no">No</button></div>
+  <p class="alt"><button id="soft">or answer honestly</button></p>
   <p class="sig disp"></p>
 </div></section>
 
 <div id="done"><div>
-  <h2 class="big disp">You said yes.</h2>
-  <p class="sub" style="font-size:1.5rem;min-height:0">You just made me the happiest person alive. Screenshot this and send it to me. I’ll be the one grinning at my phone. 🎉</p>
+  <h2 class="big disp" id="dh">You said yes.</h2>
+  <p class="sub" id="ds" style="font-size:1.5rem;min-height:0">You just made me the happiest person alive. Screenshot this and send it to me. I’ll be the one grinning at my phone. 🎉</p>
   <p class="sig disp"></p>
   <p class="stamp" id="stamp"></p><button id="again">read it again</button>
 </div></div>
@@ -139,11 +145,17 @@ const PR='I promise to laugh at your jokes, even the bad ones. To share my fries
 $('#pr').innerHTML=PR.split(' ').map(w=>'<span class="pw">'+w+'</span>').join(' ');
 const PW=[...document.querySelectorAll('.pw')];
 
+/* rose: layered petals that bloom from the centre */
+{const cl=['#ff8fa3','#ff5d7a','#e0345f','#b81f4a','#7d1237'],NL=[7,6,5,4,3];let h='';
+NL.forEach((n,l)=>{const r=[40,31,23,15,7][l],rx=[22,18,14,11,8][l],ry=[30,24,19,14,10][l];h+='<g style="--l:'+l+'">';
+ for(let i=0;i<n;i++)h+='<ellipse cy="'+(-r)+'" rx="'+rx+'" ry="'+ry+'" fill="'+cl[l]+'" stroke="#5a0f2a" stroke-opacity=".35" transform="rotate('+(i*360/n+l*23)+')"/>';h+='</g>'});
+$('#rose').innerHTML=h}
+
 /* canvas: drifting hearts + confetti */
 const cv=$('#fx'),cx=cv.getContext('2d');let W,H,D;
 const rs=()=>{D=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*D;H=cv.height=innerHeight*D};rs();addEventListener('resize',rs);
 const hs=Array.from({length:20},()=>({x:Math.random(),y:Math.random(),s:10+Math.random()*22,v:2e-4+Math.random()*4e-4,p:Math.random()*6.3,a:.1+Math.random()*.2}));
-let bits=[];const tr=[],sr=Array.from({length:45},()=>({x:Math.random(),y:Math.random()*.8,r:.6+Math.random()*1.4,p:Math.random()*6.3}));let TT=0;
+let bits=[];const tr=[],sr=Array.from({length:45},()=>({x:Math.random(),y:Math.random()*.8,r:.6+Math.random()*1.4,p:Math.random()*6.3}));let TT=0;const pt=Array.from({length:16},()=>({x:Math.random()*W,y:Math.random()*H,v:(.5+Math.random()*.9)*D,s:5+Math.random()*5,r:Math.random()*6,p:Math.random()*6.3}));
 addEventListener('pointermove',e=>{if(Math.random()<.5&&tr.length<60)tr.push({x:e.clientX*D,y:e.clientY*D,vy:-.7*D,l:1,g:['✦','♥','✧'][Math.random()*3|0],z:(10+Math.random()*10)*D})});
 function burst(x,y){const g=['♥','♡','✦','❀'],c=['#ff6b81','#ffb36b','#ffe29a','#ffc2d1','#fff3ef'];for(let i=0;i<150;i++){const a=Math.random()*6.283,s=(5+Math.random()*13)*D;bits.push({x:x*D,y:y*D,vx:Math.cos(a)*s,vy:Math.sin(a)*s-9*D,z:(14+Math.random()*24)*D,l:1,g:g[i%4],c:c[i%5]})}}
 function fx(t){cx.clearRect(0,0,W,H);cx.textAlign='center';cx.fillStyle='#fff3ef';for(const s of sr){cx.globalAlpha=Math.max(0,1-TT*1.4)*(.25+.55*Math.abs(Math.sin(t/900+s.p)));cx.beginPath();cx.arc(s.x*W,s.y*H,s.r*D,0,6.283);cx.fill()}cx.fillStyle='#ff9fb4';
@@ -151,7 +163,7 @@ function fx(t){cx.clearRect(0,0,W,H);cx.textAlign='center';cx.fillStyle='#fff3ef
  bits=bits.filter(b=>b.l>0);
  for(const b of bits){b.x+=b.vx;b.y+=b.vy;b.vy+=.3*D;b.vx*=.985;b.l-=.007;cx.globalAlpha=b.l;cx.fillStyle=b.c;cx.font=b.z+'px serif';cx.fillText(b.g,b.x,b.y)}
  for(let i=tr.length;i--;){const s=tr[i];s.x+=s.vx||0;s.y+=s.vy;s.l-=s.dl||.03;if(s.l<=0){tr.splice(i,1);continue}cx.globalAlpha=s.l;cx.fillStyle='#ffc2d1';cx.font=s.z+'px serif';cx.fillText(s.g,s.x,s.y)}
- cx.globalAlpha=1}
+ if(TT>.8){cx.fillStyle='#ff5d7a';for(const q of pt){q.y+=q.v;q.r+=.02;q.x+=Math.sin(t/900+q.p)*.5*D;if(q.y>H+20){q.y=-20;q.x=Math.random()*W}cx.globalAlpha=Math.min(1,(TT-.8)*6)*.7;cx.beginPath();cx.ellipse(q.x,q.y,q.s*D,q.s*.6*D,q.r,0,6.283);cx.fill()}}cx.globalAlpha=1}
 
 /* scroll engine */
 const P=el=>{if(RM)return 1;const r=el.getBoundingClientRect();return clamp(-r.top/(r.height-innerHeight))};
@@ -188,7 +200,9 @@ function music(v){on=v;$('#mus').classList.toggle('on',v);$('#mus').setAttribute
  else if(AC){MG.gain.cancelScheduledValues(AC.currentTime);MG.gain.setValueAtTime(MG.gain.value,AC.currentTime);MG.gain.linearRampToValueAtTime(0,AC.currentTime+.6);clearInterval(tm)}}
 function chime(){if(!AC||!on)return;[72,76,79,84,88].forEach((m,i)=>{nt(F(m),AC.currentTime+i*.11,.14,1.6,'sine');nt(F(m)*2,AC.currentTime+i*.11,.03,.6,'sine')})}
 $('#mus').onclick=()=>music(!on);
-$('#open').onclick=()=>{$('#gate').classList.add('off');document.documentElement.style.overflow='';if(L)L.start();try{music(true)}catch(e){}};
+const LT='Dear '+HER+',\nI made this little place\njust for you. Take your time.\n— '+HIM;
+$('#open').onclick=()=>{$('#env').classList.add('op');try{music(true)}catch(e){}$('#gh').textContent='';setTimeout(()=>{let i=0;const tw=setInterval(()=>{$('#lt').textContent=LT.slice(0,++i);if(i>=LT.length){clearInterval(tw);$('#go').hidden=false}},RM?1:48)},RM?0:900)};
+$('#go').onclick=()=>{$('#gate').classList.add('off');document.documentElement.style.overflow='';if(L)L.start()};
 document.documentElement.style.overflow='hidden';if(L)L.stop();
 
 /* the question */
@@ -209,8 +223,9 @@ addEventListener('pointermove',e=>{px=e.clientX;py=e.clientY});addEventListener(
 function swap(){no.classList.add('sw');no.removeAttribute('style');no.textContent='Yes 💖';yes.style.transform='';$('#btns').appendChild(no);sub.textContent='Okay okay, I’ll make it easy 😌';swT=performance.now()}
 ['pointerenter','pointerdown','focus','click'].forEach(v=>no.addEventListener(v,dodge));
 no.addEventListener('click',()=>{if(no.classList.contains('sw')&&performance.now()-swT>600)yes.click()});
-yes.onclick=()=>{const r=yes.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2);setTimeout(()=>burst(innerWidth/2,innerHeight*.35),350);$('#stamp').textContent=HER+' ♥ '+HIM+' · '+new Date().toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'});done.classList.add('on');chime()};
+yes.onclick=()=>{const r=yes.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2);setTimeout(()=>burst(innerWidth/2,innerHeight*.35),350);$('#stamp').textContent=HER+' ♥ '+HIM+' · '+new Date().toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'});$('#dh').textContent='You said yes.';$('#ds').textContent='You just made me the happiest person alive. Screenshot this and send it to me. I’ll be the one grinning at my phone. 🎉';done.classList.add('on');chime()};
 $('#again').onclick=()=>done.classList.remove('on');
+$('#soft').onclick=()=>{$('#dh').textContent='Thank you for being honest.';$('#ds').textContent='I mean that. Whatever your answer is, I’m grateful you opened this, and I’m glad you’re in my life.';$('#stamp').textContent='';done.classList.add('on')};
 })();
 </script>
 </body>
